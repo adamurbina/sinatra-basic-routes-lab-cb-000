@@ -6,9 +6,9 @@ class App < Sinatra::Base
         request = Rack::Request.new(env)
         response = Rack::Response.new
 
-        route = request.path.split("/")
+        route = request.path.split("/").last
 
         response.finish
     end
-    
+
 end
