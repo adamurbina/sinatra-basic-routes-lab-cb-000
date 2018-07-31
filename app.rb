@@ -7,7 +7,10 @@ class App < Sinatra::Base
         response = Rack::Response.new
 
         route = request.path.split("/").last
-        puts "route value:: >> #{route}"
+
+        get '/' do
+            "hi!"
+        end
 
         response.write handle_request(route)
 
