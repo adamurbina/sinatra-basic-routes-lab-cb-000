@@ -10,7 +10,6 @@ class App < Sinatra::Base
         puts "route value:: >> #{route}"
 
         response.write handle_request(route)
-        
 
         response.finish
     end
