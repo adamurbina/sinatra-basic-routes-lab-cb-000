@@ -21,7 +21,7 @@ class App < Sinatra::Base
         when "hometown"
             return "My hometown is San Fracisco"
         when "favorite-song"
-            return "California Love"
+            return "My favorite song is California Love"
         end
     end
 
