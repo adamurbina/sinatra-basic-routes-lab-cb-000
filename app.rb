@@ -8,10 +8,6 @@ class App < Sinatra::Base
 
         route = request.path.split("/").last
 
-        get '/' do
-            "hi!"
-        end
-
         response.write handle_request(route)
 
         response.finish
